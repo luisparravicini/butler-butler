@@ -2,13 +2,14 @@
 
 ## Requirements
 
-The scripts are shell scripts. They run on macOS and Linux. For windows, maybe installing cygwin the could be run (*I think there's something in windows 10 that allows you to run shell scripts?* IDK).
+This project uses shell scripts. They run on macOS and Linux. For windows, maybe installing *cygwin* can help in running them. *I think there's something in windows 10 that allows you to run shell scripts?* IDK.
 
 ## How to use it?
 
 Assuming you have a directory hierarchy similar to his:
 
 `base/dir/project` is the base of your project
+
 `base/dir/project/unity-project` is where your Unity project located
 
 ### Installation
@@ -23,8 +24,7 @@ Assuming you have a directory hierarchy similar to his:
 For each platform you will be creating builds you have to:
 
 - At the end of `dist/build_all.sh` there's a block of code for each enabled platform:
-
-```
+```shell
 platform=windows
 platform_arg=-buildWindows64Player
 binary_name=$name/$name.exe
@@ -32,11 +32,10 @@ build_player
 ```
 
 You have to edit this file to add/remove platforms as you wish.
-Unity's command line arguments can be found at https://docs.unity3d.com/Manual/CommandLineArguments.html
+Unity's command line arguments can be found at [docs.unity3d.com/Manual/CommandLineArguments](https://docs.unity3d.com/Manual/CommandLineArguments.html)
 
 - At the end of `dist/upload_all.sh`, there's a block of code for each enabled platform:
-
-```
+```shell
 platform=windows
 upload
 ```

@@ -1,0 +1,5 @@
+# Replace with your Unity path
+unity_path="/Applications/Unity/Hub/Editor/2020.1.0f1/Unity.app/Contents/MacOS/Unity"
+
+# The name will be used as a folder name to locate the project base dir
+name="PROJECT_DIR_NAME"

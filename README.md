@@ -1,16 +1,15 @@
 `butler-butler` simplifies the process of building Unity builds and uploading them to itchio.
 
+## Requirements
+
+The scripts are shell scripts. They run on macOS and Linux. For windows, maybe installing cygwin the could be run (*I think there's something in windows 10 that allows you to run shell scripts?* IDK).
+
 ## How to use it?
 
 Assuming you have a directory hierarchy similar to his:
 
 `base/dir/project` is the base of your project
 `base/dir/project/unity-project` is where your Unity project located
-
-
-### Requirements
-
-The scripts are shell scripts. They run on macOS and Linux. For windows, maybe installing cygwin the could be run (*I think there's something in windows 10 that allows you to run shell scripts?* IDK).
 
 ### Installation
 
